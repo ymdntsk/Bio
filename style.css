@@ -1,41 +1,89 @@
-.title{
+h1 {
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
+    font-family: 'inter';
+    color: white;
+    align-self: stretch;
 }
 
-.descripion{
+h2 {
+    font-family: 'inter';
+    align-self: stretch;
     color: #C4F82A;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
 }
 
-.bio{
+.bio {
     font-weight: 400;
     line-height: 21px;
     text-align: center;
 }
 
-.Background{
-    background-color: #1F1F1F;
-    border-radius: 12px;
-    max-width: 384px;
-    padding: 40px;
+.Background {
     display: flex;
+    max-width:  384px;
+    padding: 40px;
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    flex: 1 0 0;
+    border-radius: 12px;
+    background: #1F1F1F;
 }
 
-.Link{
+.Link {
     display: flex;
-    padding: 12px; /* parei aq */
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
 }
 
-p{
+.text {
+    font-weight: 400;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+input {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    background-color: #323232;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+p {
     font-family: 'inter';
     color: white;
     align-self: stretch;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-grey-900, #141414);
+    height: 100vh;
+
+}
+
+input:hover {
+    background-color: #C4F82A;
+    color: #1F1F1F;
+    cursor: pointer; 
+    transition: 0.5s; 
 }
